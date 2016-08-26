@@ -7,7 +7,7 @@ class Foo extends Component {
     return (
       <div className="foo">
         <p>{this.props.testText}</p>
-        <button onClick={this.props.testHandler}></button>
+        <button onClick={this.props.testHandler} />
         {this.props.children}
       </div>
     );
@@ -42,8 +42,8 @@ sanityCheck('sanity test', () => {
     });
 
     it('renders children when passed via props', () => {
-      const wrapper = shallow(<Foo><div className="bar"></div></Foo>);
-      expect(wrapper.contains(<div className="bar"></div>)).to.equal(true);
+      const wrapper = shallow(<Foo><div className="bar" /></Foo>);
+      expect(wrapper.contains(<div className="bar" />)).to.equal(true);
     });
   });
 
