@@ -19,7 +19,11 @@ minimalistic (really) starting point for full stack react apps
 
 `dev:hot` develop server and client (client hot module replacement)
 
-`build:client` build bundle (output to dist folder)
+`build` build client production bundle (output to dist folder)
+
+`test:client` run client tests via karma mocha kai
+`test:client:watch` run client tests and watch for changes to run again
+`test:client:sanity` run client sanity tests (make sure things are working)
 
 ## config
 create `.env` file and set variables
@@ -32,5 +36,6 @@ create `.env` file and set variables
 
 ## TODO
 
-- set up testing via karma, enzyme
+- finish npm test scripts (tdd, tdd:hot, etc)
+- set up server side testing
 - decide where to initialize dotenv for server, etc
