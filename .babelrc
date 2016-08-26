@@ -6,7 +6,8 @@
       "plugins": [
         ["istanbul", {
           "exclude": [
-            "**/*.spec.js"
+            "**/*.spec.js",
+            "config/spec.bundle.js"
           ]
           }]
       ]

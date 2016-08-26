@@ -56,7 +56,8 @@ module.exports = function initKarma(config) {
       reporters: [
         { type: 'text-summary' },
         { type: 'json' },
-        { type: 'html' }
+        { type: 'html' },
+        { type: 'lcov' }
       ]
     }
   });

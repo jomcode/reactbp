@@ -24,12 +24,12 @@ sanityCheck('sanity test', () => {
   });
 
   describe('<Foo /> shallow rendered', () => {
-    it('renders a div with class \'foo\'', () => {
+    it('renders a <div> with class \'foo\'', () => {
       const wrapper = shallow(<Foo />);
       expect(wrapper.find('.foo')).to.have.length(1);
     });
 
-    it('renders a p with value passed via props', () => {
+    it('renders a <p> with value passed via props', () => {
       const wrapper = shallow(<Foo testText="testing123" />);
       expect(wrapper.contains(<p>testing123</p>)).to.equal(true);
     });
@@ -71,7 +71,7 @@ sanityCheck('sanity test', () => {
   });
 
   describe('<Foo /> static rendered markup', () => {
-    it('renders a div with class \'foo\'', () => {
+    it('renders a <div> with class \'foo\'', () => {
       const wrapper = render(<Foo />);
       expect(wrapper.find('.foo')).to.have.length(1);
     });
