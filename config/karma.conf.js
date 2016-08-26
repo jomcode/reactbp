@@ -9,7 +9,7 @@ module.exports = function initKarma(config) {
     basePath: '',
     browsers: ['PhantomJS'],
     frameworks: ['mocha', 'chai'],
-    reporters: ['spec'],
+    reporters: ['spec', 'coverage'],
     files: [
       {
         pattern: path.join(helpers.rootDir, 'config', 'spec.bundle.js'),
@@ -18,16 +18,17 @@ module.exports = function initKarma(config) {
     ],
     exclude: [],
     preprocessors: {
-      [path.join(helpers.rootDir, 'config', 'spec.bundle.js')]: ['webpack', 'sourcemap']
+      [path.join(helpers.rootDir, 'config', 'spec.bundle.js')]:
+        ['webpack', 'sourcemap']
     },
-    plugins: [
-      'karma-mocha',
-      'karma-chai',
-      'karma-webpack',
-      'karma-phantomjs-launcher',
-      'karma-spec-reporter',
-      'karma-sourcemap-loader'
-    ],
+    // plugins: [
+      // 'karma-mocha',
+      // 'karma-chai',
+      // 'karma-webpack',
+      // 'karma-phantomjs-launcher',
+      // 'karma-spec-reporter',
+      // 'karma-sourcemap-loader'
+    // ],
     webpack: webpackConfig,
     webpackServer: {
       quiet: false,
@@ -48,6 +49,15 @@ module.exports = function initKarma(config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: false,
-    singleRun: true
+    singleRun: true,
+
+    coverageReporter: {
+      dir: 'coverage/',
+      reporters: [
+        { type: 'text-summary' },
+        { type: 'json' },
+        { type: 'html' }
+      ]
+    }
   });
 };
