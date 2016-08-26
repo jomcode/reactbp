@@ -49,3 +49,5 @@ create `.env` file and set variables
 - finish npm test scripts (tdd, tdd:hot, etc)
 - set up server side testing
 - decide where to initialize dotenv for server, etc
+- code coverage
+- CI via travis or some other service?

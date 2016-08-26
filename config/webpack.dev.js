@@ -37,13 +37,13 @@ module.exports = webpackMerge(commonConfig, {
   },
   module: {
     loaders: [
-      {
-        test: /\.scss$/,
-        loader: 'style!css!postcss!sass',
-        include: [
-          path.join(helpers.sourceDir)
-        ]
-      }
+      // {
+        // test: /\.scss$/,
+        // loader: 'style!css!postcss!sass',
+        // include: [
+          // path.join(helpers.sourceDir)
+        // ]
+      // }
     ]
   },
   plugins: devPlugins,

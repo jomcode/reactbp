@@ -18,13 +18,13 @@ module.exports = webpackMerge(commonConfig, {
   },
   module: {
     loaders: [
-      {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style', 'css!postcss!sass'),
-        include: [
-          path.join(helpers.sourceDir)
-        ]
-      }
+      // {
+        // test: /\.scss$/,
+        // loader: ExtractTextPlugin.extract('style', 'css!postcss!sass'),
+        // include: [
+          // path.join(helpers.sourceDir)
+        // ]
+      // }
     ]
   },
   plugins: [
