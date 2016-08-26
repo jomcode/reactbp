@@ -11,6 +11,8 @@ minimalistic (really) starting point for full stack react apps
 - polyfills via core-js
 
 ## npm scripts
+**development**
+
 `dev:server` develop server
 
 `dev:client` develop client (no hot module replacement)
@@ -19,10 +21,18 @@ minimalistic (really) starting point for full stack react apps
 
 `dev:hot` develop server and client (client hot module replacement)
 
+**production**
+
 `build` build client production bundle (output to dist folder)
 
+`start` runs server
+
+**tests**
+
 `test:client` run client tests via karma mocha kai
+
 `test:client:watch` run client tests and watch for changes to run again
+
 `test:client:sanity` run client sanity tests (make sure things are working)
 
 ## config
