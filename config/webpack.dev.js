@@ -36,15 +36,7 @@ module.exports = webpackMerge(commonConfig, {
     chunkFilename: '[id].chunk.js'
   },
   module: {
-    loaders: [
-      // {
-        // test: /\.scss$/,
-        // loader: 'style!css!postcss!sass',
-        // include: [
-          // path.join(helpers.sourceDir)
-        // ]
-      // }
-    ]
+    loaders: []
   },
   plugins: devPlugins,
   devServer: {

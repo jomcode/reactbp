@@ -17,15 +17,7 @@ module.exports = webpackMerge(commonConfig, {
     chunkFilename: '[name].[id].chunk.js'
   },
   module: {
-    loaders: [
-      // {
-        // test: /\.scss$/,
-        // loader: ExtractTextPlugin.extract('style', 'css!postcss!sass'),
-        // include: [
-          // path.join(helpers.sourceDir)
-        // ]
-      // }
-    ]
+    loaders: []
   },
   plugins: [
     new CleanWebpackPlugin(['!dist/.gitkeep', 'dist/**/*.*'], {
