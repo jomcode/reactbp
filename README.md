@@ -3,6 +3,9 @@ minimalistic (really) starting point for full stack react apps
 
 - webpack production and development configurations
 - react-hot-loader 3 beta
+- nodemon for server restarts
+- eslint with airbnb styleguide
+- dotenv for environment variables
 - express
 - normalize.css (extracted to vendor.css)
 - polyfills via core-js
