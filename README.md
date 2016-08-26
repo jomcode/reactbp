@@ -13,13 +13,13 @@ minimalistic (really) starting point for full stack react apps
 ## npm scripts
 **development**
 
-`dev:server` develop server
+`dev:server` develop server (nodemon restarts)
 
 `dev:client` develop client (no hot module replacement)
 
 `dev:client:hot` develop client (hot module replacement)
 
-`dev:hot` develop server and client (client hot module replacement)
+`dev:hot` develop server (nodemon restarts) and client (hot module replacement)
 
 **production**
 
