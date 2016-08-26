@@ -22,7 +22,15 @@ minimalistic (really) starting point for full stack react apps
 `build:client` build bundle (output to dist folder)
 
 ## config
-create `.env` file and set PORT for server port
+create `.env` file and set variables
+
+`PORT` express app. defaults to 3030
+
+`WEBPACK_HOST` webpack-dev-server. defaults to localhost
+
+`WEBPACK_PORT` webpack-dev-server. defaults to 8080
 
 ## TODO
-set up testing via karma, enzyme
+
+- set up testing via karma, enzyme
+- decide where to initialize dotenv for server, etc
