@@ -1,5 +1,5 @@
 /* client entry point */
-/* eslint-disable */ // TODO
+/* eslint-disable */ // TODO figure out how i want to set up eslint rules
 if (process.env.HMR === 'enabled') require('react-hot-loader/patch');
 
 import { AppContainer as HotContainer } from 'react-hot-loader';
