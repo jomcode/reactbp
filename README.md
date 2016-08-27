@@ -66,4 +66,3 @@ create `.env` file and set variables
 
 - set up code coverage for server side
 - decide where to initialize dotenv for server, etc
-- CI via travis or some other service?
