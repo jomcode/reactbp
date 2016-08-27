@@ -35,9 +35,9 @@ module.exports = webpackMerge(commonConfig, {
     sourceMapFilename: '[name].map',
     chunkFilename: '[id].chunk.js'
   },
-  module: {
-    loaders: []
-  },
+  // module: {
+    // loaders: []
+  // },
   plugins: devPlugins,
   devServer: {
     contentBase: helpers.outputDir,

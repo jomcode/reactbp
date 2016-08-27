@@ -16,9 +16,9 @@ module.exports = webpackMerge(commonConfig, {
     sourceMapFilename: '[name].[hash].map',
     chunkFilename: '[name].[id].chunk.js'
   },
-  module: {
-    loaders: []
-  },
+  // module: {
+    // loaders: []
+  // },
   plugins: [
     new CleanWebpackPlugin(['!dist/.gitkeep', 'dist/**/*.*'], {
       verbose: true,
