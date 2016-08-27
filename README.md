@@ -1,14 +1,19 @@
 #reactbp
-minimalistic (really) starting point for full stack react apps
+starting point for full stack react apps.
 
-- webpack production and development configurations
+**client**
+- webpack development, production, and test configurations
 - react-hot-loader 3 beta
-- nodemon for server restarts
 - eslint with airbnb styleguide
-- dotenv for environment variables
-- express
+- tests via karma, mocha, chai, sinon, enzyme
+- code coverage via istanbul, babel-plugin-istanbul, karma-coverage
 - normalize.css (extracted to vendor.css)
 - polyfills via core-js
+
+**server**
+- nodemon for server restarts
+- express
+- dotenv for environment variables
 
 ## npm scripts
 **development**
