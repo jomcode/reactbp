@@ -47,7 +47,11 @@ starting point for full stack react apps.
 
 `test:server:sanity` run server sanity tests (make sure things are working)
 
-`tdd`, `tdd:hot` TODO
+`tdd:client` runs `dev:client` & `test:client:watch` concurrently
+
+`tdd:client:hot` runs `dev:client:hot` & `test:client:watch` concurrently
+
+`tdd:server` runs `dev:server` & `test:server:watch` concurrently
 
 ## config
 create `.env` file and set variables
@@ -60,7 +64,6 @@ create `.env` file and set variables
 
 ## TODO
 
-- finish npm test scripts (tdd, tdd:hot, etc)
 - set up code coverage for server side
 - decide where to initialize dotenv for server, etc
 - CI via travis or some other service?

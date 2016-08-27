@@ -17,8 +17,9 @@
     "test:server:watch": "better-npm-run test:server:watch",
     "test:client:sanity": "better-npm-run test:client:sanity",
     "test:server:sanity": "better-npm-run test:server:sanity",
-    "tdd": "better-npm-run tdd",
-    "tdd:hot": "better-npm-run tdd:hot",
+    "tdd:client": "better-npm-run tdd:client",
+    "tdd:client:hot": "better-npm-run tdd:client:hot",
+    "tdd:server": "better-npm-run tdd:server",
     "heroku-postbuild": "npm run build:client"
   },
   "betterScripts": {
@@ -91,11 +92,14 @@
         "SANITY": "enabled"
       }
     },
-    "tdd": {
+    "tdd:client": {
       "command": "concurrent -k \"npm run dev:client\" \"npm run test:client:watch\""
     },
-    "tdd:hot": {
-      "command": "concurrent -k \"npm run dev:hot\" \"npm run test:client:watch\""
+    "tdd:client:hot": {
+      "command": "concurrent -k \"npm run dev:client:hot\" \"npm run test:client:watch\""
+    },
+    "tdd:server": {
+      "command": "concurrent -k --raw \"npm run dev:server\" \"npm run test:server:watch\""
     }
   },
   "repository": {
