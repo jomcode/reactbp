@@ -14,6 +14,7 @@ starting point for full stack react apps.
 - nodemon for server restarts
 - express
 - dotenv for environment variables
+- tests via mocha, chai, sinon, supertest
 
 ## npm scripts
 **development**
@@ -34,11 +35,19 @@ starting point for full stack react apps.
 
 **tests**
 
-`test:client` run client tests via karma mocha kai
+`test:client` run client tests via karma
 
 `test:client:watch` run client tests and watch for changes to run again
 
 `test:client:sanity` run client sanity tests (make sure things are working)
+
+`test:server` run server tests via mocha
+
+`test:server:watch` run server tests and watch for changes to run again
+
+`test:server:sanity` run server sanity tests (make sure things are working)
+
+`tdd`, `tdd:hot` TODO
 
 ## config
 create `.env` file and set variables
@@ -52,9 +61,6 @@ create `.env` file and set variables
 ## TODO
 
 - finish npm test scripts (tdd, tdd:hot, etc)
-- set up server side testing
-- add tests (basic server tests)
-- add server side sanity tests
 - set up code coverage for server side
 - decide where to initialize dotenv for server, etc
 - CI via travis or some other service?
