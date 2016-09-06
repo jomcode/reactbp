@@ -1,4 +1,8 @@
 #reactbp
+
+[![Build Status](https://travis-ci.org/jomcode/reactbp.svg?branch=master)](https://travis-ci.org/jomcode/reactbp)
+[![Test Coverage](https://codeclimate.com/github/jomcode/reactbp/badges/coverage.svg)](https://codeclimate.com/github/jomcode/reactbp/coverage)
+
 starting point for full stack react apps.
 
 **client**
@@ -63,6 +67,6 @@ create `.env` file and set variables
 `WEBPACK_PORT` webpack-dev-server. defaults to 8080
 
 ## TODO
-
+- minify css included in client/vendor.js entrypoint
 - set up code coverage for server side
 - decide where to initialize dotenv for server, etc

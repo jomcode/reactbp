@@ -5,7 +5,7 @@ const helpers = require('./helpers');
 module.exports = function initKarma(config) {
   const webpackConfig = require(path.join(helpers.rootDir, 'webpack.config'));
 
-  config.set({
+  const configuration = {
     basePath: '',
     browsers: ['PhantomJS'],
     frameworks: ['mocha', 'chai'],
@@ -55,10 +55,11 @@ module.exports = function initKarma(config) {
       dir: 'coverage/client/',
       reporters: [
         { type: 'text-summary' },
-        { type: 'json' },
-        { type: 'html' },
-        { type: 'lcov' }
+        { type: 'lcov', subdir: 'client' },
+        { type: 'json', subdir: 'client', file: 'coverage.json' }
       ]
     }
-  });
+  };
+
+  config.set(configuration);
 };
