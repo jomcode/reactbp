@@ -39,7 +39,7 @@ starting point for full stack react apps.
 
 **tests**
 
-`test:client` run client tests via karma
+`test:client` run client tests via karma and generates coverage report
 
 `test:client:watch` run client tests and watch for changes to run again
 
@@ -57,6 +57,14 @@ starting point for full stack react apps.
 
 `tdd:server` runs `dev:server` & `test:server:watch` concurrently
 
+**coverage reports**
+
+`test:client`, `server:coverage` generate client & server reports
+
+`coverage:combine` combine reports
+
+`codeclimate` set CODECLIMATE_REPO_TOKEN env variable then run
+
 ## config
 create `.env` file and set variables
 
@@ -66,7 +74,12 @@ create `.env` file and set variables
 
 `WEBPACK_PORT` webpack-dev-server. defaults to 8080
 
+`HMR` enabled | undefined, hot module replacement via webpack
+
+`SANITY` enabled | undefined, run sanity tests
+
+`NODE_ENV` production | development | test
+
 ## TODO
 - minify css included in client/vendor.js entrypoint
-- set up code coverage for server side
 - decide where to initialize dotenv for server, etc
