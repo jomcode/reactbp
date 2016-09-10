@@ -59,7 +59,7 @@ starting point for full stack react apps.
 
 **coverage reports**
 
-`test:client`, `server:coverage` generate client & server reports
+`test:client`, `coverage:server` generate client & server reports
 
 `coverage:combine` combine reports
 
@@ -81,5 +81,7 @@ create `.env` file and set variables
 `NODE_ENV` production | development | test
 
 ## TODO
-- minify css included in client/vendor.js entrypoint
+- minify css included in client/vendor.js entrypoint (look at extracttext in prod config)
 - decide where to initialize dotenv for server, etc
+- eslint env and globals
+- env variable to have karma output coverage or not

@@ -1,5 +1,5 @@
-require('core-js');
-global.sinon = require('sinon');
+require('core-js'); // polyfills
+global.sinon = require('sinon'); // expose sinon globally (window)
 
 const context = require.context('../src/client', true, /\.spec\.js$/);
 

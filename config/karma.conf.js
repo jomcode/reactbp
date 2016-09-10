@@ -9,7 +9,7 @@ module.exports = function initKarma(config) {
     basePath: '',
     browsers: ['PhantomJS'],
     frameworks: ['mocha', 'chai'],
-    reporters: ['spec', 'coverage'],
+    reporters: ['spec', 'coverage'], // TODO env variable to push coverage
     files: [
       {
         pattern: path.join(helpers.rootDir, 'config', 'spec.bundle.js'),
